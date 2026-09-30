@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour
     //Variable que obtendr? el movimiento del joystick en el eje X
     float moveX;
     float moveY;
+    float moveZ;
 
     //Variable que obiene la rotaci?n del RS
     float rotation;
@@ -47,6 +48,9 @@ public class PlayerManager : MonoBehaviour
         inputActions.Player.MoveY.performed += ctx => moveY = ctx.ReadValue<float>();
         inputActions.Player.MoveY.canceled += _ => moveY = 0f;
 
+        inputActions.Player.MoveZ.performed += ctx => moveZ = ctx.ReadValue<float>();
+        inputActions.Player.MoveZ.canceled += _ => moveZ = 0f;
+
         //Obtenemos la rotaci?n
         inputActions.Player.Rotate.performed += ctx => rotation = ctx.ReadValue<float>();
         inputActions.Player.Rotate.canceled += _ => rotation = 0f;
@@ -64,6 +68,9 @@ public class PlayerManager : MonoBehaviour
     {
         transform.Translate(Vector3.right * desplSpeed * moveX * Time.deltaTime, Space.World);
         transform.Translate(Vector3.up * desplSpeed * moveY * Time.deltaTime, Space.World);
+
+        //Movimiento en Z, hacia adelante, a la velocidad que diga el jugador
+        transform.Translate(Vector3.forward * desplSpeed * moveZ * Time.deltaTime, Space.World);
     }
 
     void RotatePlayer()
