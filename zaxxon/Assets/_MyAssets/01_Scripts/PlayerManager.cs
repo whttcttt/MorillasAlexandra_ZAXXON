@@ -8,12 +8,20 @@ public class PlayerManager : MonoBehaviour
     public float moveSpeed;
     [SerializeField] float desplSpeed; //Serializada para poder cambiarla en Unity
     [SerializeField] float rotationSpeed; //velocidad a la que rotar?, en vueltas por segundo
-
+    //Límites del área de juego, para que no se salga de la pantalla
+    [Header("Límites del Área de Juego")]
+    [SerializeField] private float minX = -8f;
+    [SerializeField] private float maxX = 8f;
+    [SerializeField] private float minY = -4f;
+    [SerializeField] private float maxY = 4f;
+    [SerializeField] private float minZ = -5f;
+    [SerializeField] private float maxZ = 5f;
 
     //Variable que obtendr? el movimiento del joystick en el eje X
     float moveX;
     float moveY;
     float moveZ;
+
 
     //Variable que obiene la rotaci?n del RS
     float rotation;
@@ -61,7 +69,8 @@ public class PlayerManager : MonoBehaviour
     {
         MovePlayer();
         RotatePlayer();
-
+        //Es el metodo para limitar el movimiento del jugador dentro del area de juego
+        LimitMovement();    
     }
 
     void MovePlayer()
@@ -86,6 +95,21 @@ public class PlayerManager : MonoBehaviour
         transform.eulerAngles = currentRot;
     }
 
+    void LimitMovement()
+    {
+        Vector3 posActual = transform.position;
+
+        if (posActual.x > maxX) posActual.x = maxX;
+        if (posActual.x < minX) posActual.x = minX;
+
+        if (posActual.y > maxY) posActual.y = maxY;
+        if (posActual.y < minY) posActual.y = minY;
+
+        if (posActual.z > maxZ) posActual.z = maxZ;
+        if (posActual.z < minZ) posActual.z = minZ;
+
+        transform.position = posActual;
+    }
 
     void Fire()
     {
