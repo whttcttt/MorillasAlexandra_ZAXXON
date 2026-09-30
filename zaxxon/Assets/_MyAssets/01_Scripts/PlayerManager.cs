@@ -21,10 +21,10 @@ public class PlayerManager : MonoBehaviour
     float moveX;
     float moveY;
     float moveZ;
+    float rotation;
 
 
     //Variable que obiene la rotaci?n del RS
-    float rotation;
     //Rotaci?n m?xima
     float maxRotationZ = 35f;
     float maxRotationX = 15f;
@@ -84,13 +84,14 @@ public class PlayerManager : MonoBehaviour
 
     void RotatePlayer()
     {
-        //Rotaci?n loca
+
         //transform.Rotate(Vector3.forward * rotation * rotationSpeed * Time.deltaTime * -360);
 
         //Sumo el vector de rotacion en Z mas el de rotacion en X para bascular
-        Vector3 vectorRotZ = Vector3.forward * -maxRotationZ * moveX;
+        Vector3 vectorRotZ = Vector3.forward * -maxRotationZ * rotation;
         Vector3 vectorRotX = Vector3.right * -maxRotationX * moveY;
         Vector3 vectorRot = vectorRotX + vectorRotZ;
+
         currentRot = Vector3.SmoothDamp(currentRot, vectorRot, ref velocity, smoothTime);
         transform.eulerAngles = currentRot;
     }

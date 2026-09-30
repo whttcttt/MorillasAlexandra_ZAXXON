@@ -186,7 +186,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""82ae61f6-0357-4b4d-bb3f-bdd16d59159e"",
-                    ""path"": ""<Gamepad>/leftStick/y"",
+                    ""path"": ""<Gamepad>/leftStick/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -252,7 +252,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""4a61bcbf-4e63-42ac-abbc-04c860b051ba"",
-                    ""path"": ""<Gamepad>/rightStick/x"",
+                    ""path"": ""<Gamepad>/rightStick/y"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -274,7 +274,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""ed6a130a-dfe2-4284-8ea7-b80ca589d881"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -285,7 +285,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""95463efe-40e7-49ce-b02f-64f67b090d78"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
