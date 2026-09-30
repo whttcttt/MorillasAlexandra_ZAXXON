@@ -3,12 +3,13 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     //La velocidad de movimiento, que la obtendré del jugador
-    float speed;
+    float playerSpeed;
+    [SerializeField] float mySpeed;
 
     //El componente playerManager que tendrá el jugador
     [SerializeField] PlayerManager playerManager;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start is called once before the first execution  of Update after the MonoBehaviour is created
     void Start()
     {
         //Necesito acceder al objeto (jugador) que tiene el componente PlayerManager
@@ -22,8 +23,13 @@ public class EnemyManager : MonoBehaviour
     void Update()
     {
         //Me muevo a la velocidad que diga el jugador
-        speed = playerManager.moveSpeed;
-        transform.Translate(Vector3.back * speed * Time.deltaTime);
+        playerSpeed = playerManager.moveSpeed + mySpeed;
+        transform.Translate(Vector3.back * playerSpeed * Time.deltaTime);
+
+        if (transform.position.z < -20)
+        {
+            Destroy(gameObject);
+        }
 
     }
 }

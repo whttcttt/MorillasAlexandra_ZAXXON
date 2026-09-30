@@ -177,7 +177,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""82ae61f6-0357-4b4d-bb3f-bdd16d59159e"",
-                    ""path"": ""<Gamepad>/leftStick/x"",
+                    ""path"": ""<Gamepad>/leftStick/y"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
