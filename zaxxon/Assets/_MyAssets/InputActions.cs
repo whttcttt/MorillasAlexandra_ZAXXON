@@ -118,24 +118,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Rotate"",
-                    ""type"": ""Value"",
-                    ""id"": ""12d87905-bb74-4c33-b9f9-791d1a65cc91"",
-                    ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""MoveZ"",
-                    ""type"": ""Value"",
-                    ""id"": ""2746ed60-00df-426a-98f4-2ea5ed57cf62"",
-                    ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -208,7 +190,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""negative"",
                     ""id"": ""46761486-9269-4740-a274-57acb3062913"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -219,7 +201,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""positive"",
                     ""id"": ""4f174e0c-fc30-4302-a2b8-1914df821a10"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -248,116 +230,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Fire"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4a61bcbf-4e63-42ac-abbc-04c860b051ba"",
-                    ""path"": ""<Gamepad>/rightStick/y"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Rotate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""1D Axis"",
-                    ""id"": ""de42e9f4-6fdc-4152-99f6-748e38d58fff"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Rotate"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""ed6a130a-dfe2-4284-8ea7-b80ca589d881"",
-                    ""path"": ""<Keyboard>/z"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Rotate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""95463efe-40e7-49ce-b02f-64f67b090d78"",
-                    ""path"": ""<Keyboard>/c"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Rotate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""1D Axis"",
-                    ""id"": ""41adb562-90fe-4537-a19f-58b18314684a"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveZ"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""40b19d6a-c83c-415d-a0a1-a48d8f2c16dc"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveZ"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""48693f71-7f8d-4f8b-8651-f635586a4b88"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveZ"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""1D Axis"",
-                    ""id"": ""1b3271fb-abd5-48ac-a60d-31f7248803bc"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveZ"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""69eb6626-763d-41f0-9758-7b9440392735"",
-                    ""path"": ""<Gamepad>/leftTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveZ"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""a778e264-e8b7-4a6f-9ab3-bdc6aa118295"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MoveZ"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -397,8 +269,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_Player_MoveX = m_Player.FindAction("MoveX", throwIfNotFound: true);
         m_Player_MoveY = m_Player.FindAction("MoveY", throwIfNotFound: true);
         m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
-        m_Player_Rotate = m_Player.FindAction("Rotate", throwIfNotFound: true);
-        m_Player_MoveZ = m_Player.FindAction("MoveZ", throwIfNotFound: true);
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
         m_Camera_Newaction = m_Camera.FindAction("New action", throwIfNotFound: true);
@@ -486,8 +356,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_MoveX;
     private readonly InputAction m_Player_MoveY;
     private readonly InputAction m_Player_Fire;
-    private readonly InputAction m_Player_Rotate;
-    private readonly InputAction m_Player_MoveZ;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -511,14 +379,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Fire".
         /// </summary>
         public InputAction @Fire => m_Wrapper.m_Player_Fire;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/Rotate".
-        /// </summary>
-        public InputAction @Rotate => m_Wrapper.m_Player_Rotate;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/MoveZ".
-        /// </summary>
-        public InputAction @MoveZ => m_Wrapper.m_Player_MoveZ;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -554,12 +414,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Fire.started += instance.OnFire;
             @Fire.performed += instance.OnFire;
             @Fire.canceled += instance.OnFire;
-            @Rotate.started += instance.OnRotate;
-            @Rotate.performed += instance.OnRotate;
-            @Rotate.canceled += instance.OnRotate;
-            @MoveZ.started += instance.OnMoveZ;
-            @MoveZ.performed += instance.OnMoveZ;
-            @MoveZ.canceled += instance.OnMoveZ;
         }
 
         /// <summary>
@@ -580,12 +434,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Fire.started -= instance.OnFire;
             @Fire.performed -= instance.OnFire;
             @Fire.canceled -= instance.OnFire;
-            @Rotate.started -= instance.OnRotate;
-            @Rotate.performed -= instance.OnRotate;
-            @Rotate.canceled -= instance.OnRotate;
-            @MoveZ.started -= instance.OnMoveZ;
-            @MoveZ.performed -= instance.OnMoveZ;
-            @MoveZ.canceled -= instance.OnMoveZ;
         }
 
         /// <summary>
@@ -743,20 +591,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnFire(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Rotate" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnRotate(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "MoveZ" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnMoveZ(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Camera" which allows adding and removing callbacks.

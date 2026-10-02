@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    //La velocidad de movimiento, que la obtendré del jugador
+    //La velocidad de movimiento, que la obtendrá del jugador
     float playerSpeed;
     [SerializeField] float mySpeed;
 
@@ -26,7 +26,7 @@ public class EnemyManager : MonoBehaviour
         playerSpeed = playerManager.moveSpeed + mySpeed;
         transform.Translate(Vector3.back * playerSpeed * Time.deltaTime);
 
-        if (transform.position.z < -20)
+        if (transform.position.z < -100)
         {
             Destroy(gameObject);
         }
