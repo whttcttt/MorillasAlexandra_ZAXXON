@@ -54,8 +54,8 @@ public class PlayerManager : MonoBehaviour
     void CheckLimits()
     {
         // Restricción de área fija para evitar que el jugador se salga de la pantalla
-        float clampedX = Mathf.Clamp(transform.position.x, -100f, 100f);
-        float clampedY = Mathf.Clamp(transform.position.y, 4f, 65f);
+        float clampedX = Mathf.Clamp(transform.position.x, -150f, 150f);
+        float clampedY = Mathf.Clamp(transform.position.y, 4f, 200f);
 
         transform.position = new Vector3(clampedX, clampedY, transform.position.z);
     }
